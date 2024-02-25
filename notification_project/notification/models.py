@@ -29,7 +29,7 @@ class Newsletter(models.Model):
     start_date = UnixDateTimeField()
     text = models.TextField()
     end_date = UnixDateTimeField()
-
+    objects = models.Manager()
 
 class Message(models.Model):
     class AccountStatuses(models.TextChoices):
